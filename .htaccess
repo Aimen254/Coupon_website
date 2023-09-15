@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^category-detail/([a-zA-Z0-9-/]+)?$ category-detail.php?category_id=$1
+RewriteRule ^category-detail/([a-zA-Z0-9-/]+)?/ category-detail.php?category_id=$1
+RewriteRule ^store-detail/([a-zA-Z0-9-/]+)?$ store-detail.php?store=$1
